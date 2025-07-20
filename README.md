@@ -1,1 +1,1 @@
-Repository for th Kennel Braskas Website
+Repository for the Kennel Braskas Website
