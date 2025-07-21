@@ -21,7 +21,7 @@ export function Content1() {
           <div>
             <div>
               <Image
-                src="/pentujA.jpg"
+                src="/pentuja.jpg"
                 className="object-cover rounded w-full"
                 alt="Relume placeholder image"
                 width={400}
