@@ -58,14 +58,16 @@ export function Navbar2() {
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
           <Link href="/">
             <Image
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/Logo black.png"
               alt="Logo image"
               width={100}
               height={100}
+              priority
             />
           </Link>
           <div className="flex items-center gap-4 lg:hidden">
             <button
+              aria-label="Toggle mobile menu"
               className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
               onClick={useActive.toggleMobileMenu}
             >

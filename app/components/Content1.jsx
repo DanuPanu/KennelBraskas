@@ -21,11 +21,12 @@ export function Content1() {
           <div>
             <div>
               <Image
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="/pentujA.jpg"
                 className="object-cover rounded w-full"
                 alt="Relume placeholder image"
-                width={1000}
-                height={1000}
+                width={400}
+                height={400}
+                quality={95}
               />
             </div>
           </div>

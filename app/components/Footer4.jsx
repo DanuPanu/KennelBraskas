@@ -3,6 +3,7 @@
 import React from "react";
 import { BiLogoFacebookCircle, BiLogoInstagram } from "react-icons/bi";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer4() {
   const scrollToSection = (sectionId) => {
@@ -16,10 +17,16 @@ export function Footer4() {
     <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-pink flex flex-col items-center justify-center">
       <div className="container">
         <div className="grid grid-cols-1 items-center justify-center justify-items-center gap-x-[4vw] gap-y-12 pb-12 md:pb-18 lg:grid-cols-[0.25fr_1fr_0.25fr] lg:justify-between lg:gap-y-4 lg:pb-20">
-          <Link href="#" className="lg:justify-self-start">
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+          <Link href="#relume"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('relume');
+                }}>
+            <Image
+              src="/Logo black.png"
               alt="Logo image"
+              width={100}
+              height={100}
               className="inline-block"
             />
           </Link>
@@ -92,19 +99,19 @@ export function Footer4() {
             </li>
           </ul>
           <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end">
-            <Link href="#">
+            <Link href="#" aria-label="Facebook">
               <BiLogoFacebookCircle className="size-6" />
             </Link>
-            <Link href="#">
+            <Link href="#" aria-label="Instagram">
               <BiLogoInstagram className="size-6" />
             </Link>
           </div>
         </div>
         <div className="h-px w-full bg-black" />
         <div className="flex flex-col-reverse items-center justify-center justify-items-center pt-6 pb-4 text-sm md:flex-row md:gap-x-6 md:pt-8 md:pb-0">
-          <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
+          <div className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <p className="mt-8 md:mt-0">© 2024 Relume. All rights reserved.</p>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>

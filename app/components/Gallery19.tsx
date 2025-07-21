@@ -128,6 +128,7 @@ export default function Gallery19() {
         <div className="mt-[30px] flex items-center justify-center md:mt-[46px]">
           {dogImages.map((_, index) => (
             <button
+              aria-label={`Go to slide ${index + 1}`}
               key={index}
               onClick={handleDotClick(index)}
               className={dotClassName(index)}

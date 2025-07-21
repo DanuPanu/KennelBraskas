@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 
@@ -25,11 +23,13 @@ export function Header26() {
           </div>
           <div>
             <Image
+              priority
               src="/jessica-d-vega-TJV3QIO7r4M-unsplash.jpg"
               className="size-full rounded object-cover"
               alt="Relume placeholder image"
-              width={1000}
-              height={1000}
+              width={600}
+              height={400}
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 50vw"
             />
           </div>
         </div>

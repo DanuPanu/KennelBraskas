@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Quicksand, Cabin } from "next/font/google";
+import PopUp from "./components/PopUp";
+import { CookieConsentProvider } from "./context/CookieConsentContext";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand",
@@ -29,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${quicksand.variable} ${cabin.variable} antialiased`}
       >
-        {children}
+        <CookieConsentProvider>
+          <PopUp />
+          {children}
+        </CookieConsentProvider>
       </body>
     </html>
   );

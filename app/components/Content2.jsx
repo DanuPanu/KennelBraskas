@@ -8,11 +8,12 @@ export function Content2() {
         <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
           <div className="order-2 md:order-1">
             <Image
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="/dorien-vleeming-X25mh0aC6vk-unsplash.jpg"
               className="w-full rounded object-cover"
               alt="Relume placeholder image"
-              width={1000}
-              height={1000}
+              width={400}
+              height={400}
+              quality={95}
             />
           </div>
           <div className="order-1 md:order-2">
